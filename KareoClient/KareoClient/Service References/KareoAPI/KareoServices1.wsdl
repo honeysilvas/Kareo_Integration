@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://www.kareo.com/api/schemas/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://tempuri.org/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="KareoServices" targetNamespace="http://www.kareo.com/api/schemas/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://tempuri.org/" location="https://webservice.kareo.com/services/soap/2.1/KareoServices.svc?wsdl=wsdl0" />
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.kareo.com/api/schemas/Imports">
+      <xsd:import schemaLocation="https://webservice.kareo.com/services/soap/2.1/KareoServices.svc?xsd=xsd0" namespace="http://www.kareo.com/api/schemas/" />
+      <xsd:import schemaLocation="https://webservice.kareo.com/services/soap/2.1/KareoServices.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://webservice.kareo.com/services/soap/2.1/KareoServices.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/KareoServicesWCF" />
+      <xsd:import schemaLocation="https://webservice.kareo.com/services/soap/2.1/KareoServices.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="https://webservice.kareo.com/services/soap/2.1/KareoServices.svc?xsd=xsd4" namespace="http://www.kareo.com/api/schemas" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="KareoServices_UpdatePatient_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePatient" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_UpdatePatient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePatientResponse" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_CreatePatient_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePatient" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_CreatePatient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePatientResponse" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_CreateEncounter_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateEncounter" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_CreateEncounter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateEncounterResponse" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_RegisterExternalVendor_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterExternalVendor" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_RegisterExternalVendor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterExternalVendorResponse" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_UpdatePatientsExternalID_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePatientsExternalID" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_UpdatePatientsExternalID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePatientsExternalIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_GetAllPatients_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPatients" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_GetAllPatients_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPatientsResponse" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_GetPatient_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatient" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_GetPatient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientResponse" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_GetAppointments_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppointments" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_GetAppointments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppointmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_GetCharges_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCharges" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_GetCharges_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetChargesResponse" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_GetPatients_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatients" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_GetPatients_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientsResponse" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_GetPayments_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayments" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_GetPayments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaymentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_GetProviders_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProviders" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_GetProviders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProvidersResponse" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_GetPractices_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPractices" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_GetPractices_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPracticesResponse" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_GetTransactions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransactions" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_GetTransactions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransactionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_GetServiceLocations_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetServiceLocations" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_GetServiceLocations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetServiceLocationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_GetProcedureCodes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProcedureCodes" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_GetProcedureCodes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProcedureCodesResponse" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_GetExternalVendors_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExternalVendors" />
+  </wsdl:message>
+  <wsdl:message name="KareoServices_GetExternalVendors_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExternalVendorsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="KareoServices">
+    <wsdl:operation name="UpdatePatient">
+      <wsdl:input wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/UpdatePatient" message="tns:KareoServices_UpdatePatient_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/UpdatePatientResponse" message="tns:KareoServices_UpdatePatient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePatient">
+      <wsdl:input wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/CreatePatient" message="tns:KareoServices_CreatePatient_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/CreatePatientResponse" message="tns:KareoServices_CreatePatient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateEncounter">
+      <wsdl:input wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/CreateEncounter" message="tns:KareoServices_CreateEncounter_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/CreateEncounterResponse" message="tns:KareoServices_CreateEncounter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterExternalVendor">
+      <wsdl:input wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/RegisterExternalVendor" message="tns:KareoServices_RegisterExternalVendor_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/RegisterExternalVendorResponse" message="tns:KareoServices_RegisterExternalVendor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePatientsExternalID">
+      <wsdl:input wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/UpdatePatientsExternalID" message="tns:KareoServices_UpdatePatientsExternalID_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/UpdatePatientsExternalIDResponse" message="tns:KareoServices_UpdatePatientsExternalID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPatients">
+      <wsdl:input wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/GetAllPatients" message="tns:KareoServices_GetAllPatients_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/GetAllPatientsResponse" message="tns:KareoServices_GetAllPatients_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPatient">
+      <wsdl:input wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/GetPatient" message="tns:KareoServices_GetPatient_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/GetPatientResponse" message="tns:KareoServices_GetPatient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAppointments">
+      <wsdl:input wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/GetAppointments" message="tns:KareoServices_GetAppointments_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/GetAppointmentsResponse" message="tns:KareoServices_GetAppointments_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCharges">
+      <wsdl:input wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/GetCharges" message="tns:KareoServices_GetCharges_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/GetChargesResponse" message="tns:KareoServices_GetCharges_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPatients">
+      <wsdl:input wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/GetPatients" message="tns:KareoServices_GetPatients_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/GetPatientsResponse" message="tns:KareoServices_GetPatients_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPayments">
+      <wsdl:input wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/GetPayments" message="tns:KareoServices_GetPayments_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/GetPaymentsResponse" message="tns:KareoServices_GetPayments_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProviders">
+      <wsdl:input wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/GetProviders" message="tns:KareoServices_GetProviders_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/GetProvidersResponse" message="tns:KareoServices_GetProviders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPractices">
+      <wsdl:input wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/GetPractices" message="tns:KareoServices_GetPractices_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/GetPracticesResponse" message="tns:KareoServices_GetPractices_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactions">
+      <wsdl:input wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/GetTransactions" message="tns:KareoServices_GetTransactions_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/GetTransactionsResponse" message="tns:KareoServices_GetTransactions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceLocations">
+      <wsdl:input wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/GetServiceLocations" message="tns:KareoServices_GetServiceLocations_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/GetServiceLocationsResponse" message="tns:KareoServices_GetServiceLocations_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProcedureCodes">
+      <wsdl:input wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/GetProcedureCodes" message="tns:KareoServices_GetProcedureCodes_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/GetProcedureCodesResponse" message="tns:KareoServices_GetProcedureCodes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExternalVendors">
+      <wsdl:input wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/GetExternalVendors" message="tns:KareoServices_GetExternalVendors_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kareo.com/api/schemas/KareoServices/GetExternalVendorsResponse" message="tns:KareoServices_GetExternalVendors_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="KareoServices">
+    <wsdl:port name="BasicHttpBinding_KareoServices" binding="i0:BasicHttpBinding_KareoServices">
+      <soap:address location="https://webservice.kareo.com/services/soap/2.1/KareoServices.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

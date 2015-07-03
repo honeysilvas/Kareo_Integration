@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cca03a64-b2c0-432e-9f10-09d2b67bde92" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://webservice.kareo.com/services/soap/2.1/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="KareoServices.xsd" MetadataType="Schema" ID="df84ecec-864a-4bd4-bf14-442b9f7f07c1" SourceId="1" SourceUrl="https://webservice.kareo.com/services/soap/2.1/KareoServices.svc?xsd=xsd0" />
+    <MetadataFile FileName="KareoServices1.xsd" MetadataType="Schema" ID="c36faa6c-0312-49bf-aad4-79a997feefe6" SourceId="1" SourceUrl="https://webservice.kareo.com/services/soap/2.1/KareoServices.svc?xsd=xsd3" />
+    <MetadataFile FileName="KareoServices2.xsd" MetadataType="Schema" ID="fa0a0b1f-1cf8-4e11-a4fc-a796ad969a58" SourceId="1" SourceUrl="https://webservice.kareo.com/services/soap/2.1/KareoServices.svc?xsd=xsd2" />
+    <MetadataFile FileName="KareoServices.wsdl" MetadataType="Wsdl" ID="006fe174-ceb7-496f-9dcd-180f5d68ad9e" SourceId="1" SourceUrl="https://webservice.kareo.com/services/soap/2.1/KareoServices.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="KareoServices.disco" MetadataType="Disco" ID="1d44cf99-bdd8-4dac-a583-cc482a4144da" SourceId="1" SourceUrl="https://webservice.kareo.com/services/soap/2.1/KareoServices.svc?disco" />
+    <MetadataFile FileName="KareoServices3.xsd" MetadataType="Schema" ID="6b614ee7-0bbe-4109-ad82-5603763f0648" SourceId="1" SourceUrl="https://webservice.kareo.com/services/soap/2.1/KareoServices.svc?xsd=xsd4" />
+    <MetadataFile FileName="KareoServices1.wsdl" MetadataType="Wsdl" ID="8df5af94-6d25-46b0-9084-b485a1d9b153" SourceId="1" SourceUrl="https://webservice.kareo.com/services/soap/2.1/KareoServices.svc?wsdl" />
+    <MetadataFile FileName="KareoServices4.xsd" MetadataType="Schema" ID="94e1129e-094a-442f-9c18-b675912a0dfe" SourceId="1" SourceUrl="https://webservice.kareo.com/services/soap/2.1/KareoServices.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

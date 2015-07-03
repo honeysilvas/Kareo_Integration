@@ -1,0 +1,9 @@
+C:\xampp\htdocs\project\github\Kareo_Integration\KareoClient\KareoClient\bin\Release\KareoClient.exe.config
+C:\xampp\htdocs\project\github\Kareo_Integration\KareoClient\KareoClient\bin\Release\KareoClient.exe
+C:\xampp\htdocs\project\github\Kareo_Integration\KareoClient\KareoClient\bin\Release\KareoClient.pdb
+C:\xampp\htdocs\project\github\Kareo_Integration\KareoClient\KareoClient\obj\Release\KareoClient.csprojResolveAssemblyReference.cache
+C:\xampp\htdocs\project\github\Kareo_Integration\KareoClient\KareoClient\obj\Release\KareoClient.Form1.resources
+C:\xampp\htdocs\project\github\Kareo_Integration\KareoClient\KareoClient\obj\Release\KareoClient.Properties.Resources.resources
+C:\xampp\htdocs\project\github\Kareo_Integration\KareoClient\KareoClient\obj\Release\KareoClient.csproj.GenerateResource.Cache
+C:\xampp\htdocs\project\github\Kareo_Integration\KareoClient\KareoClient\obj\Release\KareoClient.exe
+C:\xampp\htdocs\project\github\Kareo_Integration\KareoClient\KareoClient\obj\Release\KareoClient.pdb

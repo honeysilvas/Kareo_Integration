@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.kareo.com/api/schemas" elementFormDefault="qualified" targetNamespace="http://www.kareo.com/api/schemas" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://webservice.kareo.com/services/soap/2.1/KareoServices.svc?xsd=xsd0" namespace="http://www.kareo.com/api/schemas/" />
+  <xs:complexType name="GetServiceLocationsReq">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://www.kareo.com/api/schemas/" base="q1:RequestBase">
+        <xs:sequence>
+          <xs:element name="Fields" nillable="true" type="tns:ServiceLocationFieldsToReturn" />
+          <xs:element minOccurs="0" name="Filter" nillable="true" type="tns:ServiceLocationFilter" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetServiceLocationsReq" nillable="true" type="tns:GetServiceLocationsReq" />
+  <xs:complexType name="ServiceLocationFieldsToReturn">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AddressLine1" type="xs:boolean" />
+      <xs:element minOccurs="0" name="AddressLine2" type="xs:boolean" />
+      <xs:element minOccurs="0" name="BillingName" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CLIANumber" type="xs:boolean" />
+      <xs:element minOccurs="0" name="City" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Country" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:boolean" />
+      <xs:element minOccurs="0" name="FacilityIDType" type="xs:boolean" />
+      <xs:element minOccurs="0" name="FaxPhone" type="xs:boolean" />
+      <xs:element minOccurs="0" name="FaxPhoneExt" type="xs:boolean" />
+      <xs:element minOccurs="0" name="HCFABox32FacilityID" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ID" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ModifiedDate" type="xs:boolean" />
+      <xs:element minOccurs="0" name="NPI" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Name" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Phone" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PhoneExt" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PlaceOfService" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PracticeID" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PracticeName" type="xs:boolean" />
+      <xs:element minOccurs="0" name="State" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ZipCode" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ServiceLocationFieldsToReturn" nillable="true" type="tns:ServiceLocationFieldsToReturn" />
+  <xs:complexType name="ServiceLocationFilter">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FromCreatedDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FromLastModifiedDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PracticeID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PracticeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ToCreatedDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ToLastModifiedDate" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ServiceLocationFilter" nillable="true" type="tns:ServiceLocationFilter" />
+  <xs:complexType name="GetServiceLocationsResp">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://www.kareo.com/api/schemas/" base="q2:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ServiceLocations" nillable="true" type="tns:ArrayOfServiceLocationData" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetServiceLocationsResp" nillable="true" type="tns:GetServiceLocationsResp" />
+  <xs:complexType name="ArrayOfServiceLocationData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ServiceLocationData" nillable="true" type="tns:ServiceLocationData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfServiceLocationData" nillable="true" type="tns:ArrayOfServiceLocationData" />
+  <xs:complexType name="ServiceLocationData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AddressLine1" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="AddressLine2" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="BillingName" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="CLIANumber" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="CreatedDate" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="FacilityIDType" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="FaxPhone" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="FaxPhoneExt" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="HCFABox32FacilityID" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="NPI" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="PhoneExt" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="PlaceOfService" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="PracticeID" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="PracticeName" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ServiceLocationData" nillable="true" type="tns:ServiceLocationData" />
+  <xs:complexType name="GetProcedureCodesReq">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://www.kareo.com/api/schemas/" base="q3:RequestBase">
+        <xs:sequence>
+          <xs:element name="Fields" nillable="true" type="tns:ProcedureCodeFieldsToReturn" />
+          <xs:element minOccurs="0" name="Filter" nillable="true" type="tns:ProcedureCodeFilter" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetProcedureCodesReq" nillable="true" type="tns:GetProcedureCodesReq" />
+  <xs:complexType name="ProcedureCodeFieldsToReturn">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Active" type="xs:boolean" />
+      <xs:element minOccurs="0" name="BillableCode" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CustomerSpecific" type="xs:boolean" />
+      <xs:element minOccurs="0" name="DefaultUnits" type="xs:boolean" />
+      <xs:element minOccurs="0" name="DrugName" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ID" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LocalName" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ModifiedDate" type="xs:boolean" />
+      <xs:element minOccurs="0" name="NDC" type="xs:boolean" />
+      <xs:element minOccurs="0" name="OfficialDescription" type="xs:boolean" />
+      <xs:element minOccurs="0" name="OfficialName" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PracticeName" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ProcedureCode" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ProcedureCodeCategoryID" type="xs:boolean" />
+      <xs:element minOccurs="0" name="TypeOfServiceCode" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProcedureCodeFieldsToReturn" nillable="true" type="tns:ProcedureCodeFieldsToReturn" />
+  <xs:complexType name="ProcedureCodeFilter">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Active" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CustomerSpecific" type="xs:boolean" />
+      <xs:element minOccurs="0" name="FromCreatedDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FromLastModifiedDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProcedureCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ToCreatedDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ToLastModifiedDate" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProcedureCodeFilter" nillable="true" type="tns:ProcedureCodeFilter" />
+  <xs:complexType name="GetProcedureCodesResp">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://www.kareo.com/api/schemas/" base="q4:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ProcedureCodes" nillable="true" type="tns:ArrayOfProcedureCodeData" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetProcedureCodesResp" nillable="true" type="tns:GetProcedureCodesResp" />
+  <xs:complexType name="ArrayOfProcedureCodeData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProcedureCodeData" nillable="true" type="tns:ProcedureCodeData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProcedureCodeData" nillable="true" type="tns:ArrayOfProcedureCodeData" />
+  <xs:complexType name="ProcedureCodeData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="BillableCode" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="CreatedDate" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="CustomerSpecific" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="DefaultUnits" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="DrugName" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="LocalName" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="NDC" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="OfficialDescription" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="OfficialName" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="PracticeName" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="ProcedureCode" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="ProcedureCodeCategoryID" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="TypeOfServiceCode" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProcedureCodeData" nillable="true" type="tns:ProcedureCodeData" />
+</xs:schema>
